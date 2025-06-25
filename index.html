@@ -130,7 +130,10 @@
     </section>
     
 <section class="formulario-section" id="formulario">
+<input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="index.html" value="#">
   <div class="formulario-container">
+    <form class="formulario" action="https://formsubmit.co/contato.vitorkohts@gmail.com" method="POST">
     <form class="formulario">
       <h2>Entre em Contato</h2>
 
@@ -147,6 +150,9 @@
       <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
 
       <button type="submit">Enviar</button>
+        <p id="mensagem-enviada" style="display: none; color: green; margin-top: 1rem;">
+  Sua mensagem foi enviada com sucesso!
+</p>
     </form>
   </div>
 </section>
