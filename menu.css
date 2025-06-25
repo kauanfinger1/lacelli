@@ -24,10 +24,15 @@ header {
 }
 
 .logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
   width: 70px;
   height: 70px;
-  background: url('img/Principais/JPEG/Villa\ Lacelli\ -\ Identidade\ Visual\ -\ Logotipos-02.jpg') no-repeat center center / cover;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .search-container {
