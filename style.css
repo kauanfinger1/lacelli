@@ -1,13 +1,13 @@
 @font-face {
     font-family: 'Manrope'; /* Sans Serif */
-    src: url('/Fonte/Manrope-VariableFont_wght.ttf') format('truetype');
+    src: url('Fonte/Manrope-VariableFont_wght.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Petrona'; /*Serif */
-    src: url('/Fonte/Petrona-Italic-VariableFont_wght.ttf') format('truetype');
+    src: url('Fonte/Petrona-Italic-VariableFont_wght.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -277,7 +277,7 @@ header {
 }
 
 .formulario-section {
-  background-image: url(/Logotipos/Villa\ Lacelli\ -\ Identidade\ Visual\ -\ Logotipos_textura_01.jpg);
+  background-image: url("Logotipos/Villa\ Lacelli\ -\ Identidade\ Visual\ -\ Logotipos_textura_01.jpg");
   display: flex;
   background-size: cover;   
   background-position: center;
