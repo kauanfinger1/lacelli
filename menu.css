@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-padding-top: 2rem;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: "Manrope", sans-serif; 
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #EEE8CE;
+  color: #333;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #f1e8c9;
+}
+
+.logo {
+  width: 70px;
+  height: 70px;
+  background: url('/img/Principais/JPEG/Villa\ Lacelli\ -\ Identidade\ Visual\ -\ Logotipos-02.jpg') no-repeat center center / cover;
+  border-radius: 50%;
+}
+
+.search-container {
+  flex: 1;
+  margin: 0 20px;
+  display: flex;
+  background-color: #CEB29F;
+  border-radius: 25px;
+  overflow: hidden;
+  height: 55px;
+}
+
+.search-container input {
+  flex: 1;
+  border: none;
+  padding: 0 15px;
+  font-size: 16px;
+  background: none;
+  outline: none;
+}
+
+.search-container button {
+  background-color: #202F8D;
+  border: none;
+  padding: 0 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-container button img {
+  width: 20px;
+  height: 20px;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 45px;
+}
+
+.actions .contact {
+  background-color: #EEE8CE;
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 12px 18px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;  
+}
+
+.actions .login {
+  background-color: #202F8D;
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 5px 32px;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.actions img {
+  width: 18px;
+  height: 18px;
+}
+
+main {
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+}
+
+button.filter-icon {
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+aside.filter {
+  width: 200px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+  padding: 10px;
+}
+
+.filter-icon img {
+  width: 20px;
+  height: 20px;
+}
+
+.filter ul {
+  list-style: none;
+  margin-top: 10px;
+}
+
+.filter li {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.filter li img {
+  width: 16px;
+  height: 16px;
+}
+
+section.products {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+.product {
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.image-placeholder {
+  width: 100%;
+  height: 150px;
+  background-color: #ddd;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+
+  aside.filter {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .search-container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .search-container input {
+    padding: 10px;
+  }
+
+  .search-container button {
+    padding: 10px;
+    width: 100%;
+  }
+}

@@ -1,0 +1,482 @@
+@font-face {
+    font-family: 'Manrope'; /* Sans Serif */
+    src: url('/Fonte/Manrope-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Petrona'; /*Serif */
+    src: url('/Fonte/Petrona-Italic-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-padding-top: 2rem;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: "Manrope", sans-serif; 
+}
+
+:root {
+    --principal:#EEE8CE;
+    --azul:#202F8D;
+    --laranja:#F17164;
+    --tan:#CEB29F;
+}
+
+section {
+    padding: 50px 10%;
+}
+
+*::selection {
+    color: white;
+    background: var(--laranja);
+}
+
+img {
+    width: 100%;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--laranja);
+    box-shadow: 0 4px 41px rgb(14, 55, 54 / 14%);
+    padding: 15px 10%;
+    transition: 0.2s;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 40px;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar a {
+    font-size: 1rem;
+    padding: 11px 20px;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.navbar a:hover {
+    color: black;
+}
+
+#menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1001;
+    display: none;
+}
+
+.inicio {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background: var(--principal);
+    gap: 1rem;
+}
+
+.inicio-texto {
+    flex: 1 1 17rem;
+}
+
+.inicio-img {
+    flex: 1 1 17rem;
+}
+
+.inicio-img img {
+    animation: animate 3s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: translate(-11px, 0);
+    }
+    50% {
+        transform: translate(-0px, 11px);
+    }
+    100% {
+        transform: translate(-11px, 0);
+    }
+}
+
+.inicio-texto span {
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #000f6d;
+}
+
+.inicio-texto h1 {
+    font-size: 3.2rem;
+    color: var(--azul);
+}
+
+.inicio-texto h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #000f6d;
+    text-transform: uppercase;
+    margin: 0.5rem 0 1.4rem;
+}
+
+.btn {
+    padding: 7px 16px;
+    border: 2px solid var(--laranja );
+    border-radius: 40px;
+    color: var(--laranja);
+    font-weight: 500;
+}
+
+.btn:hover {
+    color: #fff;
+    background: var(--laranja);
+}
+
+.heading {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.heading span {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #000f6d;
+}
+
+.heading h1{
+    font-size: 2rem;
+    color: var(--azul);
+}
+
+.produtos-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 5rem;
+}
+
+.produtos-container .box {
+    flex: 1 1 10rem;
+    background: var(--azul);
+    padding: 20px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+    border-radius: 0.5rem;
+}
+
+.produtos-container .box .box-img {
+    width: 150px;
+    height: 150px;
+    margin-top: -100px;
+}
+
+.produtos-container .box .box-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.stars {
+    margin: 1rem 0 0.1rem;
+}
+
+.produtos-container .box .stars .bx {
+    color: var(--principal);
+}
+
+.produtos-container .box h2 {
+    color: var(--principal);
+    font-size: 1.2rem;
+}
+
+.produtos-container .box span {
+    color: var(--principal);
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin: 0.2rem 0 0.5rem;
+}
+
+.box .btn {
+    border: 2px solid #ebebeb;
+    color: #ffffff;
+}
+
+.box .btn:hover {
+    background: var(--principal);
+    color: var(--azul);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.historia-img {
+    flex: 1 1 21rem;
+}
+
+.historia-texto,
+.localizacao-texto {
+    flex: 1 1 21rem;
+}
+
+.historia-texto h2, 
+.localizacao-texto h2 {
+    font-size: 1.2rem;
+    color: #000f6d;
+}
+
+.historia-texto p,
+.localizacao-texto p {
+    margin: 0.5rem 0 1rem;
+    text-align: justify;
+}
+
+.mapbox {
+    flex: 1 1 300px;
+    max-width: 300px;
+    height: 300px;
+    background: #fff; 
+    border: 0;
+}
+
+.mapbox iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.formulario-section {
+  background-image: url(/Logotipos/Villa\ Lacelli\ -\ Identidade\ Visual\ -\ Logotipos_textura_01.jpg);
+  display: flex;
+  background-size: cover;   
+  background-position: center;
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 2rem;
+}
+
+.formulario-container {
+  background: #ffffff;
+  padding: 3rem 2rem;
+  border-radius: 20px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+  transition: transform 0.3s ease;
+  border-left: 8px solid #000f6d;
+}
+
+.formulario-container:hover {
+  transform: translateY(-5px);
+}
+
+.formulario h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #000f6d;
+  text-align: center;
+}
+
+.formulario label {
+  display: block;
+  margin-top: 1.25rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.formulario input,
+.formulario textarea {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  margin-top: 0.5rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+  font-size: 1rem;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.formulario input:focus,
+.formulario textarea:focus {
+  border-color: #000f6d;
+  background-color: #fff;
+  outline: none;
+}
+
+.formulario button {
+  margin-top: 2rem;
+  width: 100%;
+  padding: 0.9rem;
+  background-color: #000f6d;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.formulario button:hover {
+  background-color: #1a239c;
+  transform: scale(1.03);
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social a {
+    font-size: 27px;
+    margin: 0.5rem;
+}
+
+.social a .bx {
+    padding: 5px;
+    color: #fff;
+    background: #0000;
+    border-radius: 50%;
+}
+
+.social a .bx:hover {
+    background: var(--azul);
+}
+
+.links {
+    margin: 1rem 0 1rem;
+}
+
+.links a {
+    font-size: 1rem;
+    font-weight: 500;
+    color: black;
+    padding: 1rem;
+}
+
+.links a:hover {
+    color: var(--azul);
+}
+
+.footer p {
+    text-align: center;
+}
+
+@media (max-width:1150px ){
+    header {
+        padding: 18px 7%;
+    }
+    section {
+        padding: 50px 7%;
+    }
+    .inicio-texto h1 {
+        font-size: 3rem;
+    }
+    .inicio-texto h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 991px ){
+    header {
+        padding: 18px 4%;
+    }
+    section {
+        padding: 50px 4%;
+    }
+}
+
+@media (max-width: 768px ){
+    header {
+        padding: 11px 4%;
+    }
+    #menu-icon {
+        display: initial;
+    }
+
+    header .navbar {
+        position: absolute;
+        top: -500px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background: var(--laranja);
+        box-shadow: 0 4px 4px rgb(14, 55, 54 / 14%);
+        border-top: 2px solid var(--azul);
+        transition: 0.2s;
+        text-align: left;
+    }
+    .navbar.active {
+        top: 100%;
+    }
+    .navbar a {
+        padding: 1.5rem;
+        display: block;
+        color: white;
+    }
+    .inicio-texto span {
+        font-size: 0.9rem;
+    }
+    .inicio-texto h1 {
+        font-size: 2.4rem;
+    }
+    .inicio-texto h2 {
+        font-size: 1.2rem;
+    } 
+}
+
+@media (max-width: 768px) {
+    .inicio-texto {
+        padding-top: inherit;
+    }
+    .produtos-container .box {
+        margin-top: 6rem;
+    }
+    .heading h1 {
+        font-size: 1.5rem;
+    }
+    .heading span {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 364px) {
+    .links {
+        display: flex;
+        flex-direction: column;
+    }
+}
